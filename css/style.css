@@ -1,0 +1,1180 @@
+
+
+/* Website Colors and Fonts */
+:root {
+  --soft-pink: #F8DCE7;
+  --dusty-rose: #C76B91;
+  --white: #FFFFFF;
+  --charcoal: #333333;
+}
+
+/* General Website Styling */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background-color: var(--white);
+  color: var(--charcoal);
+  font-family: 'Manrope', sans-serif;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+/* Headings */
+h1, h2, h3 {
+  font-family: 'Raleway', sans-serif;
+  line-height: 1.3;
+  font-weight: 400;
+}
+
+
+h1 {
+  font-size: 42px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+h3 {
+  font-size: 22px;
+}
+
+/* Links */
+a {
+  color: var(--dusty-rose);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Images */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Header and Navigation */
+header {
+  background-color: var(--soft-pink);
+  padding: 20px 5%;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+nav h2 {
+  font-size: 24px;
+  margin: 0;
+  color: var(--charcoal);
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  color: var(--charcoal);
+  font-weight: 600;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #914467;
+  text-decoration: underline;
+}
+
+
+/* Homepage Welcome Section */
+#home {
+  background-color: var(--soft-pink);
+  padding: 80px 8%;
+  text-align: center;
+}
+
+#home h1 {
+  font-size: 42px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+#home p {
+  max-width: 650px;
+  margin: 0 auto 30px;
+  font-size: 16px;
+}
+
+/* Homepage Buttons */
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-family: 'Manrope', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  transition: background-color 0.3s ease;
+}
+
+/* Main Pink Button */
+.btn-primary {
+  background-color: var(--dusty-rose);
+  color: var(--white);
+}
+
+.btn-primary:hover {
+  background-color: #914467;
+  color: var(--white);
+  text-decoration: none;
+}
+
+/* Secondary Buttons */
+.btn-secondary {
+  background-color: var(--white);
+  color: #914467;
+  border: 1px solid var(--dusty-rose);
+}
+
+.btn-secondary:hover {
+  background-color: #FBE7EF;
+  text-decoration: none;
+}
+
+
+/* About Me Section */
+#about {
+  background-color: var(--white);
+  padding: 70px 8%;
+}
+
+#about h2 {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 500;
+  margin: 0 0 35px;
+}
+
+/* Pink line underneath the heading */
+#about h2::after {
+  content: "";
+  display: block;
+  width: 55px;
+  height: 3px;
+  background-color: var(--dusty-rose);
+  margin: 12px auto 0;
+  border-radius: 3px;
+}
+
+/* About Me Paragraphs */
+#about p {
+  max-width: 850px;
+  margin: 0 auto 20px;
+  font-size: 16px;
+  line-height: 1.9;
+}
+
+#about p:last-child {
+  margin-bottom: 0;
+}
+
+/* Explore My Portfolio Section */
+#explore {
+  background-color: #FFF8FA;
+  padding: 70px 8%;
+  text-align: center;
+}
+
+#explore h2 {
+  font-size: 30px;
+  font-weight: 500;
+  margin: 0 0 40px;
+}
+
+/* Portfolio Cards */
+#explore {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+#explore h2 {
+  width: 100%;
+}
+
+#explore article {
+  background-color: var(--white);
+  border: 1px solid #EAC5D4;
+  border-radius: 15px;
+  padding: 30px 25px;
+  width: 300px;
+  max-width: 100%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+  transition: transform 0.3s ease,
+  box-shadow 0.3s ease;
+}
+
+#explore article:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+#explore article h3 {
+  font-size: 20px;
+  font-weight: 500;
+  margin-top: 0;
+}
+
+#explore article p {
+  font-size: 14px;
+  margin-bottom: 25px;
+}
+
+#explore article a {
+  display: inline-block;
+  background-color: var(--soft-pink);
+  color: #914467;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+#explore article a:hover {
+  background-color: #EAC5D4;
+  text-decoration: none;
+}
+
+
+/* Footer */
+footer {
+  background-color: var(--soft-pink);
+  padding: 25px 20px;
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+  font-size: 14px;
+  color: var(--charcoal);
+}
+
+
+/* Work Experience Page */
+
+/* Page Introduction */
+.page-intro {
+  background-color: var(--soft-pink);
+  text-align: center;
+  padding: 70px 8%;
+}
+
+.page-intro h1 {
+  font-size: 40px;
+  font-weight: 500;
+  margin: 0 0 20px;
+}
+
+.page-intro p {
+  max-width: 750px;
+  margin: 0 auto;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+/* Experience Section */
+.experience-section {
+  background-color: #FFF8FA;
+  padding: 70px 8%;
+}
+
+.experience-section > h2 {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 500;
+  margin: 0 0 40px;
+}
+
+/* Individual Experience Cards */
+.experience-card {
+  background-color: var(--white);
+  border: 1px solid #EAC5D4;
+  border-radius: 15px;
+  padding: 35px;
+  max-width: 950px;
+  margin: 0 auto 30px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
+  transition: transform 0.3s ease,
+  box-shadow 0.3s ease;
+}
+
+.experience-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.08);
+}
+
+/* Company Name */
+.experience-card h3 {
+  font-size: 24px;
+  font-weight: 500;
+  margin: 0 0 8px;
+}
+
+/* Job Title */
+.job-title {
+  color: var(--dusty-rose);
+  font-size: 17px;
+  font-weight: 600;
+  margin: 0 0 5px;
+}
+
+/* Employment Dates */
+.job-date {
+  color: #777777;
+  font-size: 14px;
+  margin: 0 0 25px;
+}
+
+/* Experience Description */
+.experience-card > p:not(.job-title):not(.job-date) {
+  font-size: 15px;
+  line-height: 1.9;
+  margin-bottom: 25px;
+}
+
+/* Responsibilities Heading */
+.experience-card h4 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0 0 15px;
+}
+
+/* Responsibilities List */
+.experience-card ul {
+  padding-left: 22px;
+  margin: 0;
+}
+
+.experience-card li {
+  font-size: 15px;
+  line-height: 1.8;
+  margin-bottom: 12px;
+}
+
+.experience-card li::marker {
+  color: var(--dusty-rose);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .page-intro {
+    padding: 50px 6%;
+  }
+
+  .page-intro h1 {
+    font-size: 32px;
+  }
+
+  .experience-section {
+    padding: 50px 5%;
+  }
+
+  .experience-card {
+    padding: 25px 20px;
+  }
+
+  .experience-card h3 {
+    font-size: 21px;
+  }
+}
+
+
+/* Work Experience Page */
+
+/* Page Introduction */
+.page-intro {
+  background-color: var(--soft-pink);
+  text-align: center;
+  padding: 70px 8%;
+}
+
+.page-intro h1 {
+  font-size: 40px;
+  font-weight: 500;
+  margin: 0 0 20px;
+}
+
+.page-intro p {
+  max-width: 750px;
+  margin: 0 auto;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+/* Experience Section */
+.experience-section {
+  background-color: #FFF8FA;
+  padding: 70px 8%;
+}
+
+.experience-section > h2 {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 500;
+  margin: 0 0 40px;
+}
+
+/* Individual Experience Cards */
+.experience-card {
+  background-color: var(--white);
+  border: 1px solid #EAC5D4;
+  border-radius: 15px;
+  padding: 35px;
+  max-width: 950px;
+  margin: 0 auto 30px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
+  transition: transform 0.3s ease,
+  box-shadow 0.3s ease;
+}
+
+.experience-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.08);
+}
+
+/* Company Name */
+.experience-card h3 {
+  font-size: 24px;
+  font-weight: 500;
+  margin: 0 0 8px;
+}
+
+/* Job Title */
+.job-title {
+  color: var(--dusty-rose);
+  font-size: 17px;
+  font-weight: 600;
+  margin: 0 0 5px;
+}
+
+/* Employment Dates */
+.job-date {
+  color: #777777;
+  font-size: 14px;
+  margin: 0 0 25px;
+}
+
+/* Experience Description */
+.experience-card > p:not(.job-title):not(.job-date) {
+  font-size: 15px;
+  line-height: 1.9;
+  margin-bottom: 25px;
+}
+
+/* Responsibilities Heading */
+.experience-card h4 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0 0 15px;
+}
+
+/* Responsibilities List */
+.experience-card ul {
+  padding-left: 22px;
+  margin: 0;
+}
+
+.experience-card li {
+  font-size: 15px;
+  line-height: 1.8;
+  margin-bottom: 12px;
+}
+
+.experience-card li::marker {
+  color: var(--dusty-rose);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .page-intro {
+    padding: 50px 6%;
+  }
+
+  .page-intro h1 {
+    font-size: 32px;
+  }
+
+  .experience-section {
+    padding: 50px 5%;
+  }
+
+  .experience-card {
+    padding: 25px 20px;
+  }
+
+  .experience-card h3 {
+    font-size: 21px;
+  }
+}
+
+
+/* ====================================
+   COLLEGE INVOLVEMENT PAGE
+   Pink and Purple Theme
+==================================== */
+
+/* Colors */
+:root {
+  --light-purple: #F5F0FF;
+  --lavender: #E4D6FA;
+  --medium-purple: #8A69BA;
+  --dark-purple: #48356B;
+  --light-pink: #FFF0F6;
+}
+
+/* College Involvement Introduction */
+body:has(.involvement-section) .page-intro {
+  background-color: var(--soft-pink);
+  padding: 70px 8%;
+  text-align: center;
+}
+
+body:has(.involvement-section) .page-intro h1 {
+  color: var(--dark-purple);
+}
+
+/* College Involvement Sections */
+.involvement-section {
+  background-color: var(--light-purple);
+  padding: 60px 8%;
+}
+
+/* Girls Who Code - Light Pink */
+.involvement-section:nth-of-type(3) {
+  background-color: var(--light-pink);
+}
+
+/* Section Headings */
+.involvement-section h2 {
+  text-align: center;
+  color: var(--dark-purple);
+  font-size: 30px;
+  font-weight: 500;
+  margin: 0 0 35px;
+}
+
+/* Rounded White Leadership Cards */
+.involvement-card {
+  background-color: var(--white);
+  border: 1px solid var(--lavender);
+  border-radius: 16px;
+  padding: 35px;
+  max-width: 950px;
+  margin: 0 auto 25px;
+  box-shadow: 0 4px 15px rgba(72, 53, 107, 0.06);
+  transition: transform 0.3s ease,
+  box-shadow 0.3s ease;
+}
+
+/* Card Hover Effect */
+.involvement-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 22px rgba(72, 53, 107, 0.10);
+}
+
+/* Leadership Role Titles */
+.involvement-card h3 {
+  color: var(--dusty-rose);
+  font-size: 23px;
+  font-weight: 500;
+  margin: 0 0 10px;
+}
+
+/* Responsibilities Headings */
+.involvement-card h4 {
+  color: var(--dark-purple);
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  margin: 25px 0 15px;
+}
+
+/* Card Paragraphs */
+.involvement-card p {
+  font-size: 15px;
+  line-height: 1.9;
+}
+
+/* Responsibilities Lists */
+.involvement-card ul {
+  padding-left: 22px;
+  margin-bottom: 0;
+}
+
+.involvement-card li {
+  font-size: 15px;
+  line-height: 1.8;
+  margin-bottom: 12px;
+}
+
+.involvement-card li::marker {
+  color: var(--dusty-rose);
+}
+
+/* Gallery Introduction */
+.gallery-intro {
+  max-width: 750px;
+  margin: 0 auto 35px;
+  text-align: center;
+  line-height: 1.8;
+}
+
+/* Rounded Photo Accordions */
+.photo-accordion {
+  max-width: 950px;
+  margin: 20px auto;
+  background-color: var(--white);
+  border: 1px solid var(--lavender);
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(72, 53, 107, 0.05);
+}
+
+/* Accordion Headings */
+.photo-accordion summary {
+  padding: 20px 25px;
+  background-color: var(--soft-pink);
+  color: var(--dark-purple);
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Accordion Hover */
+.photo-accordion summary:hover {
+  background-color: var(--lavender);
+}
+
+/* Accordion When Open */
+.photo-accordion[open] summary {
+  background-color: var(--lavender);
+}
+
+/* Photo Gallery - two photos per row */
+.photo-accordion .photo-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  padding: 20px;
+}
+
+.photo-accordion .photo-gallery img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+/* Hide empty images accidentally produced by stray HTML image tags */
+.photo-accordion .photo-gallery img:not([src]),
+.photo-accordion .photo-gallery img[src=""] {
+  display: none;
+}
+
+/* College involvement responsive styling */
+@media (max-width: 768px) {
+  .involvement-section {
+    padding: 45px 5%;
+  }
+
+  .involvement-section h2 {
+    font-size: 26px;
+  }
+
+  .involvement-card {
+    padding: 25px 20px;
+  }
+
+  .photo-accordion .photo-gallery img {
+    height: 190px;
+  }
+}
+
+@media (max-width: 480px) {
+  .photo-accordion .photo-gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .photo-accordion .photo-gallery img {
+    height: auto;
+  }
+
+  .photo-accordion summary {
+    font-size: 16px;
+  }
+}
+
+
+/* Show full photos without cropping */
+
+.photo-accordion .photo-gallery img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 15px;
+  display: block;
+}
+
+
+/* ==================================
+   SKILLS PAGE
+================================== */
+
+/* Skills Section */
+
+.skills-section {
+  padding: 50px 8%;
+  background-color: #FFF6FA;
+  text-align: center;
+}
+
+.skills-section h2,
+.coursework-section h2 {
+  font-family: 'Raleway', sans-serif;
+  color: #48356B;
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+/* Skills Card Layout */
+
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 25px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Individual Skills Cards */
+
+.skill-card {
+  background-color: white;
+  padding: 30px;
+  border-radius: 18px;
+  border: 1px solid #F0C8D8;
+  box-shadow: 0 5px 15px rgba(199, 107, 145, 0.08);
+  text-align: left;
+  transition: transform 0.3s ease,
+  box-shadow 0.3s ease;
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(199, 107, 145, 0.15);
+}
+
+.skill-card h3 {
+  font-family: 'Raleway', sans-serif;
+  color: #48356B;
+  font-size: 21px;
+  margin-bottom: 20px;
+}
+
+/* Pink Skill Labels */
+
+.skill-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skill-list span {
+  background-color: #F8DCE7;
+  color: #704C63;
+  padding: 9px 15px;
+  border-radius: 20px;
+  font-family: 'Manrope', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* ==
+   RELEVANT COURSEWORK
+======*/
+
+.coursework-section {
+  padding: 60px 8%;
+  background-color: #F8DCE7;
+  text-align: center;
+}
+
+.coursework-section > p {
+  font-family: 'Manrope', sans-serif;
+  max-width: 700px;
+  margin: 0 auto 35px;
+  line-height: 1.8;
+  color: #704C63;
+}
+
+.coursework-container {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 25px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Coursework Cards */
+
+.coursework-card {
+  background-color: white;
+  padding: 30px;
+  border-radius: 18px;
+  border: 1px solid #F0C8D8;
+  text-align: left;
+  box-shadow: 0 5px 15px rgba(199, 107, 145, 0.08);
+}
+
+.coursework-card h3 {
+  font-family: 'Raleway', sans-serif;
+  color: #48356B;
+  font-size: 19px;
+  margin-bottom: 20px;
+}
+
+.coursework-card ul {
+  padding-left: 20px;
+  margin: 0;
+}
+
+.coursework-card li {
+  font-family: 'Manrope', sans-serif;
+  color: #704C63;
+  line-height: 1.8;
+  margin-bottom: 12px;
+}
+
+
+
+@media (max-width: 900px) {
+
+  .coursework-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 650px) {
+
+  .skills-container {
+    grid-template-columns: 1fr;
+  }
+
+  .skills-section,
+  .coursework-section {
+    padding: 40px 5%;
+  }
+
+  .skill-card,
+  .coursework-card {
+    padding: 22px;
+  }
+
+  .skills-section h2,
+  .coursework-section h2 {
+    font-size: 25px;
+  }
+}
+
+/* ==================================
+   CONTACT PAGE
+================================== */
+
+/* Contact Introduction */
+
+.contact-intro {
+  background-color: #F8DCE7;
+  text-align: center;
+  padding: 70px 10%;
+}
+
+.contact-intro h1 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 42px;
+  color: #48356B;
+  margin-bottom: 20px;
+}
+
+.contact-intro p {
+  font-family: 'Manrope', sans-serif;
+  color: #704C63;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.8;
+}
+
+/* Contact Information */
+
+.contact-section {
+  background-color: #FFF6FA;
+  padding: 60px 8%;
+  text-align: center;
+}
+
+.contact-section h2,
+.contact-form-section h2 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 30px;
+  color: #48356B;
+  margin-bottom: 30px;
+}
+
+.contact-container {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 25px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Contact Cards */
+
+.contact-card {
+  background-color: white;
+  border: 1px solid #F0C8D8;
+  border-radius: 18px;
+  padding: 35px 25px;
+  box-shadow: 0 5px 15px rgba(199, 107, 145, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.contact-card:hover {
+  transform: translateY(-5px);
+}
+
+.contact-card h3 {
+  font-family: 'Raleway', sans-serif;
+  color: #48356B;
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+.contact-card p {
+  font-family: 'Manrope', sans-serif;
+  color: #704C63;
+  line-height: 1.7;
+  margin-bottom: 25px;
+}
+
+/* Contact Card Buttons */
+
+.contact-card a {
+  display: inline-block;
+  background-color: #C76B91;
+  color: white;
+  padding: 12px 22px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-family: 'Manrope', sans-serif;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.contact-card a:hover {
+  background-color: #A94F76;
+}
+
+/* ==================================
+   CONTACT FORM
+================================== */
+
+.contact-form-section {
+  background-color: #F8DCE7;
+  padding: 60px 8%;
+  text-align: center;
+}
+
+.contact-form-section > p {
+  font-family: 'Manrope', sans-serif;
+  color: #704C63;
+  margin-bottom: 30px;
+}
+
+.contact-form {
+  max-width: 650px;
+  margin: 0 auto;
+  padding: 35px;
+  background-color: white;
+  border-radius: 20px;
+  border: 1px solid #F0C8D8;
+  box-shadow: 0 5px 15px rgba(199, 107, 145, 0.08);
+  text-align: left;
+}
+
+/* Form Labels */
+
+.contact-form label {
+  display: block;
+  font-family: 'Manrope', sans-serif;
+  color: #48356B;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+/* Form Inputs */
+
+.contact-form input,
+.contact-form textarea {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 14px;
+  margin-bottom: 25px;
+  border: 1px solid #E8B8CC;
+  border-radius: 10px;
+  font-family: 'Manrope', sans-serif;
+  font-size: 15px;
+  background-color: #FFF9FC;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: 2px solid #C76B91;
+  border-color: #C76B91;
+}
+
+.contact-form textarea {
+  resize: vertical;
+}
+
+/* Send Message Button */
+
+.contact-form button {
+  background-color: #C76B91;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  padding: 14px 30px;
+  font-family: 'Manrope', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #A94F76;
+}
+
+/* ==================================
+   CONTACT PAGE RESPONSIVE DESIGN
+================================== */
+
+@media (max-width: 850px) {
+
+  .contact-container {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-intro {
+    padding: 50px 6%;
+  }
+
+  .contact-intro h1 {
+    font-size: 34px;
+  }
+
+  .contact-section,
+  .contact-form-section {
+    padding: 45px 5%;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .contact-form {
+    padding: 22px;
+  }
+
+  .contact-form button {
+    width: 100%;
+  }
+}
+
+/* Homepage Resume Button */
+
+.resume-button {
+  display: inline-block;
+  background-color: #C76B91;
+  color: white;
+  padding: 14px 28px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-family: 'Manrope', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 20px;
+  transition: background-color 0.3s ease,
+  transform 0.3s ease;
+}
+
+.resume-button:hover {
+  background-color: #A94F76;
+  transform: translateY(-3px);
+}
+
+.resume-button:focus-visible {
+  outline: 3px solid #48356B;
+  outline-offset: 3px;
+}
+
+/* Center and resize homepage resume button */
+
+.resume-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.resume-container .resume-button {
+  display: inline-block;
+  width: auto;
+  padding: 12px 24px;
+  font-size: 15px;
+  border-radius: 25px;
+  margin: 0;
+  text-align: center;
+}
